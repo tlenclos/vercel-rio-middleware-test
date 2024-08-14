@@ -12,7 +12,17 @@ export default function Home() {
       </div>
 
       <div className={styles.center}>
-        <Button />
+        <ul>
+          <li>
+            <Button />
+          </li>
+          <li>
+            <a href="/test-next">Go to /test-next</a>
+          </li>
+          <li>
+            <a href="/test-rewrite">Go to /test-rewrite</a>
+          </li>
+        </ul>
       </div>
 
       <div className={styles.grid}>
