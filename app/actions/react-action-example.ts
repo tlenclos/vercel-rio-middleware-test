@@ -1,6 +1,6 @@
 "use server";
 
-export async function reactActionExample() {
+export async function reactActionExample(hugeJson: any) {
   try {
     // Simulate a long task with a delay
     await new Promise((resolve) => setTimeout(resolve, 2000));
@@ -13,6 +13,7 @@ export async function reactActionExample() {
       status: "success",
       message: "Task completed successfully",
       data: await response.json(),
+      hugeJson,
     };
   } catch (error) {
     // Return error message
